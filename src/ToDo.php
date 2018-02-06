@@ -13,10 +13,14 @@ class ToDo {
     }
 
     public function id() {
-        return $id;
+        return $this->id;
     }
 
     public function content() {
-        return $content;
+        return $this->content;
+    }
+
+    public function editContent(string $content) {
+        $this->content = $content;
     }
 }
